@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="Tabs_weather">false</item>
+    <item type="id" name="Tabs_analyze">false</item>
+    <item type="id" name="Tabs_logcontent">false</item>
+    <item type="id" name="Tabs_contact">false</item>
+</resources>

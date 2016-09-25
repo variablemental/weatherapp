@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Weatherapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="scroll_bars_city">城市/地区</string>
+    <string name="infomaiton_bar">详细信息...</string>
+    <string name="city_Beijing">北京</string>
+    <string name="city_Shanghai">上海</string>
+    <string name="city_Guangzhou">广州</string>
+    <string name="city_Shenzhen">深圳</string>
+    <string name="city_Nanjing">南京</string>
+    <string name="city_Hangzhou">杭州</string>
+    <string name="city_Chongking">重庆</string>
+    <string name="city_Chengdu">成都</string>
+    <string name="fragment_list">选择城市</string>
+    <string name="select_for_default">设置默认城市</string>
+    <string name="tabs_weather">天气</string>
+    <string name="tabs_analyze">分析</string>
+    <string name="tabs_logcontent">每日心得</string>
+    <string name="tabs_getcontact">连接一下</string>
+</resources>
