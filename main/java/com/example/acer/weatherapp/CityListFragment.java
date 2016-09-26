@@ -39,9 +39,9 @@ public class CityListFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         CityInfo cityname=mCitylist.get(position);
-        Intent i=new Intent(getActivity(),MainActivity.class);
-        i.putExtra(MainActivity.City,cityname.getCity());
-        startActivityForResult(i,MainActivity.REQUEST_OF_CITY);
+        Intent i=new Intent(getActivity(),WeatherActivity.class);
+        i.putExtra(WeatherActivity.City,cityname.getCity());
+        startActivityForResult(i, WeatherActivity.REQUEST_OF_CITY);
 
     }
     public void loadArrays() {

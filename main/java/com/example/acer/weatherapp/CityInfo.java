@@ -6,13 +6,14 @@ import net.sf.json.JSONObject;
 import org.json.JSONException;
 
 import java.io.Serializable;
+import java.util.Comparator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * Created by acer on 2016/9/10.
  */
-public class CityInfo implements Serializable {
+public class CityInfo implements Serializable,Comparator {
     private String cityname;
     private String weather;
     private Integer temperature;
@@ -53,6 +54,11 @@ public class CityInfo implements Serializable {
 //        this.wind=info.getwind();
 //        this.wet=info.getWet();
 //    }
+
+    /**
+     *
+     * @param detail String类型的JSON信息，在这个函数里面接收和解析
+     */
 
     public void setDetail(String detail) {
         try {
@@ -116,4 +122,10 @@ public class CityInfo implements Serializable {
                             +"风力:"+wind_de+ "\n");
     }
 
+    @Override
+    public int compare(Object lhs,Object rhs) {
+        CityInfo a=(CityInfo)lhs;
+        CityInfo b=(CityInfo)rhs;
+        return a.getTemperature()>b.getTemperature()?1:0;
+    }
 }

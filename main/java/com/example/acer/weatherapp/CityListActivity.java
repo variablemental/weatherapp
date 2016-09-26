@@ -24,6 +24,9 @@ public class CityListActivity extends Activity {
     private ArrayList<CityInfo> mCitylist = new ArrayList<CityInfo>();
     public static String PARCEL_KEY="PARCEL_KEY";
     public static String INFO="INFO";
+    public static String SELECT_CITY="SELECT_CITY";
+    public static int ResultCode=1;
+    private String getTag;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -44,12 +47,10 @@ public class CityListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 CityInfo city = mCitylist.get(position);
-                Intent i=new Intent(CityListActivity.this,MainActivity.class);
-                Bundle bundle=new Bundle();
-                bundle.putSerializable(PARCEL_KEY,city);
-                i.putExtra(INFO, MainActivity.City);
-                i.putExtras(bundle);
-                startActivityForResult(i,MainActivity.REQUEST_OF_CITY);
+                Intent intent=new Intent();
+                intent.putExtra(SELECT_CITY,city.getCity());
+                CityListActivity.this.setResult(ResultCode, intent);
+                CityListActivity.this.finish();
             }
         });
         // ATTENTION: This was auto-generated to implement the App Indexing API.

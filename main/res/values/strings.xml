@@ -17,4 +17,8 @@
     <string name="tabs_analyze">分析</string>
     <string name="tabs_logcontent">每日心得</string>
     <string name="tabs_getcontact">连接一下</string>
+    <string name="tabs_home">首页</string>
+    <string name="analyze_temperature">天气比较</string>
+    <string name="analyze_citytemperature">天气趋势图</string>
+    <string name="analyze_button_selectcity">选择城市</string>
 </resources>
