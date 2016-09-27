@@ -21,4 +21,5 @@
     <string name="analyze_temperature">天气比较</string>
     <string name="analyze_citytemperature">天气趋势图</string>
     <string name="analyze_button_selectcity">选择城市</string>
+    <string name="analyze_show_button">城市趋势</string>
 </resources>

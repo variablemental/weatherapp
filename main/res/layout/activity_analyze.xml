@@ -3,44 +3,72 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
-        <TextView
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/analyze_temperature"/>
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/analyze_temperature"
+            android:layout_weight="0.5"/>
+            <Button
+                android:id="@+id/analyze_button_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/analyze_show_button"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+        <com.example.acer.weatherapp.TemperatureView
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/analyze_temperature_predict"/>
 
     </LinearLayout>
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
-        <com.example.acer.weatherapp.TemperatureView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/analyze_temperature_city"/>
 
-        <Button
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="@string/analyze_button_selectcity"
-            android:id="@+id/analyze_button_for_select"
-            />
+            android:orientation="vertical">
         <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/analyze_citytemperature"/>
+
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/analyze_text_city"
-            android:paddingLeft="50dp"
-            android:layout_gravity="bottom"
-            />
-        <TextView
-            android:layout_width="wrap_content"
+            android:paddingLeft="50dp"/>
+        <Button
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
-            android:text="@string/analyze_citytemperature"/>
+            android:layout_gravity="bottom"
+            android:layout_marginTop="150dp"
+            android:text="@string/analyze_button_selectcity"
+            android:id="@+id/analyze_button_for_select"
+            />
+
+                />
+    </LinearLayout>
+        <com.example.acer.weatherapp.TemperatureView
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/analyze_temperature_city"/>
+
+
 
     </LinearLayout>
 
